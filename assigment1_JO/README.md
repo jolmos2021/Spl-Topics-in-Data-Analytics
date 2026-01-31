@@ -1,7 +1,9 @@
 ##Project Setup and Execution Instructions
+### Download the project repository ‘assigment1_JO’ from GitHub.
+### Place the file ‘all_stocks_5yr.csv’ in the ‘assigment1_JO\data’ directory.
 ### Open Visual Studio Code (VS Code).
-### Navigate to and open the project folder.
 ### Open a new terminal within VS Code.
+### Navigate to and open the project folder.
 ### Create a virtual environment by running the following command:
 	python -m venv venv
 ### Activate the virtual environment:
