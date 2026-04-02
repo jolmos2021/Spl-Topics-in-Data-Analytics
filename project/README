@@ -1,1 +1,56 @@
+Project Execution Instructions
+Step 0 – Download the Script
 
+Download the project script file and save it in a local directory on your computer.
+
+Step 1 – Install Python
+
+Visit the official Python website:
+https://www.python.org/downloads/
+
+Download Python 3.11 or 3.12
+During installation, it is very important to select the option:
+	Add Python to PATH
+Then click “Install Now”
+Step 2 – Open Command Prompt
+
+Open the command prompt (CMD) or terminal on your system.
+
+Step 3 – Verify Python Installation
+
+Run the following command to confirm that Python is correctly installed:
+
+python -V
+Step 4 – Navigate to the Project Folder
+
+Use the command line to navigate to the directory where the script is located.
+
+Step 5 – Create a Virtual Environment
+
+Create a dedicated virtual environment for this project:
+
+py -3.14 -m venv forex_env
+
+Activate the virtual environment:
+
+forex_env\Scripts\activate
+Step 6 – Upgrade pip (Optional)
+
+Update pip to the latest version:
+
+python -m pip install --upgrade pip
+Step 7 – Install Required Libraries
+
+Install all necessary dependencies:
+
+pip install yfinance pandas numpy matplotlib scikit-learn lightgbm fredapi
+Step 8 – Run the Script
+
+Once all libraries are installed, execute the script using:
+
+python forex_predictionJoseOlmos.py
+Step 9 – Deactivate the Virtual Environment (Optional)
+
+After completing the execution, you can exit the virtual environment with:
+
+deactivate
