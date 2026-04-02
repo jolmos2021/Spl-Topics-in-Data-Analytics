@@ -152,6 +152,12 @@ df.dropna(inplace=True)
 print(f"\nDataset shape after cleaning: {df.shape}")
 
 # ==========================================
+# EXPORT FINAL DATASET
+# ==========================================
+df.to_csv("final_dataset.csv", index=False)
+print("✓ Final dataset exported as 'final_dataset.csv'")
+
+# ==========================================
 # 5. MODEL TRAINING
 # ==========================================
 
