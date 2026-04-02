@@ -54,3 +54,49 @@ Step 9 – Deactivate the Virtual Environment (Optional)
 After completing the execution, you can exit the virtual environment with:
 
 deactivate
+
+
+1. Source URLs of Original Data
+
+The project uses data collected from two main APIs:
+
+Financial Data (FOREX)
+Source: Yahoo Finance
+Accessed via: yfinance
+URL: https://finance.yahoo.com/
+
+Description:
+Historical foreign exchange (FOREX) data for currency pairs (USD/CLP, USD/COP, USD/CAD) was retrieved programmatically using the Yahoo Finance API.
+
+Macroeconomic Data
+Source: Federal Reserve Economic Data
+Accessed via: fredapi
+URL: https://fred.stlouisfed.org/
+
+Indicators used:
+
+Federal Funds Rate (Interest Rate)
+Crude Oil Prices
+Consumer Price Index (CPI)
+
+Description:
+Macroeconomic indicators were obtained from the FRED database to enrich the model with external economic factors.
+
+2. Modified Data Files
+Description of Processed Data
+
+The original datasets were transformed and combined into a structured dataset for machine learning purposes.
+
+Key modifications include:
+
+Merging datasets using the Date field (time series alignment)
+Handling missing values using forward filling
+Creating new features:
+Technical indicators (SMA, RSI, MACD)
+Volatility measures
+Lag variables (previous day prices)
+Returns (daily and weekly)
+Final Dataset Characteristics
+Total observations: 7,913 rows
+Total features: 20 columns
+Target variable: Next-day closing price (Close_next)
